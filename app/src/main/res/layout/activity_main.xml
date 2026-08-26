@@ -3,24 +3,46 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
     android:padding="24dp"
-    android:background="@color/white">
+    android:gravity="center_horizontal"
+    android:background="#FFFFFF">
 
     <ImageView
         android:id="@+id/logoMds"
-        android:layout_width="220dp"
-        android:layout_height="220dp"
-        android:layout_marginBottom="24dp"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="30dp"
         android:contentDescription="Logo MDS"
         android:src="@drawable/mds_logo"
         android:scaleType="fitCenter" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/judulAplikasi"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
         android:text="DZIKIR HARIAN WAJIB"
-        android:textSize="24sp"
+        android:textColor="#222222"
+        android:textSize="26sp"
         android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/teksHalaman"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Bismillahirrahmanirrahim"
+        android:textColor="#333333"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnLanjut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LANJUT"
+        android:textSize="18sp" />
 
 </LinearLayout>
